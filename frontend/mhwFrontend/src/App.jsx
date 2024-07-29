@@ -1,3 +1,8 @@
+import Card from "./components/Card"
+import CardL from "./components/CardL"
+import Footer from "./components/Footer"
+import MiddleIntro from "./components/MiddleIntro"
+import Navbar from "./components/Navbar"
 
 
 function App() {
@@ -5,7 +10,10 @@ function App() {
 
   return (
    <>
-   <h1 className='text-red-500'>CHECK</h1>
+   <Navbar/>
+   
+   <MiddleIntro/>
+   <Footer/>
    </>
   )
 }
