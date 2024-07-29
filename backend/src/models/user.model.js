@@ -24,7 +24,11 @@ moodEnteries:[{
 mentalResult:[{
     type:Schema.Types.ObjectId,
     ref:"Assessment"
-}]
+}],
+
+refreshToken:{
+type:String,
+}
 
 },{timestamps:true})
 
