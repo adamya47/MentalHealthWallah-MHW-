@@ -10,4 +10,4 @@ userRouter.route("/login").post(loginUser)
 //secure routes
 userRouter.route("/logout").post(verifyJWT,logoutUser)
 userRouter.route("/refreshAccessToken").post(refreshAccessToken)
-userRouter.route("/currentUser").post(verifyJWT,getCurrentUser)
+userRouter.route("/currentUser").get(verifyJWT,getCurrentUser)
