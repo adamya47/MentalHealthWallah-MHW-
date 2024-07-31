@@ -51,27 +51,32 @@ userSchema.methods.isPasswordCorrect=async function(password){
 }
 
 
-userSchema.methods.generateAccessToken=function(){
-
- const accessToken=jwt.sign({
-    _id:this._id,
-     username:this.username,
-     password:this.password,
-
- },
- process.env.ACCESS_TOKEN_SECRET,
- {
-    expiresIn:process.env.ACCESS_TOKEN_EXPIRY
- }
-)
-
-return accessToken;
+userSchema.methods.generateAccessToken=async function(){
+try {
+    
+    return jwt.sign({
+        _id:this._id,
+         username:this.username,
+         password:this.password,
+    
+     },
+     process.env.ACCESS_TOKEN_SECRET,
+     {
+        expiresIn:process.env.ACCESS_TOKEN_EXPIRY 
+     }
+    )
+    
+    
+} catch (error) {
+    console.log(error)
+    
+}
 }
 
 
-userSchema.methods.generateRefreshToken=function(){
+userSchema.methods.generateRefreshToken=async function(){
 
-    return jwt.sign({_id:this._id},process.env.REFRESH_TOKEN_SECRET,{
+    return  jwt.sign({_id:this._id},process.env.REFRESH_TOKEN_SECRET,{
         expiresIn:process.env.REFRESH_TOKEN_EXPIRY
     })
 }

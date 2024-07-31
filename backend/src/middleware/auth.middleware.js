@@ -1,11 +1,11 @@
-import { User } from "../models/user.model";
-import { ApiError } from "../utillities/ApiError";
-import { asyncHandler } from "../utillities/asyncHandler";
+import { User } from "../models/user.model.js";
+import { ApiError } from "../utillities/ApiError.js";
+import { asyncHandler } from "../utillities/asyncHandler.js";
 import jwt from "jsonwebtoken"
 
 export const verifyJWT=asyncHandler(async(req,_,next)=>{
 
-  try {
+  
       const token=req.cookies?.accessToken || req.header("Authorization")?.replace("Bearer ","")
   
       if(!token){
@@ -27,8 +27,6 @@ export const verifyJWT=asyncHandler(async(req,_,next)=>{
   
    next();
   
-  } catch (error) {
-    throw new ApiError(400,error?.message || "Some issue during verifying access")
-  }
+  
 
 })
