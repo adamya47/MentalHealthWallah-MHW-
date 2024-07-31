@@ -5,13 +5,30 @@ function MiddleIntro() {
     <section class="bg-teal-500 text-black">
   <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
     <div class="mx-auto max-w-lg text-center">
-      <h2 class="text-3xl font-bold sm:text-4xl font-thin">MHW FOR YOUR MHW hyperUI</h2>
 
-      <p class="mt-4 text-black">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur aliquam doloribus
-        nesciunt eos fugiat. Vitae aperiam fugit consequuntur saepe laborum.
-      </p>
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
+    MHW FOR YOUR MHW
+   
+  </h2>
+  <p class="text-3xl sm:text-4xl font-light text-gray-800">
+   Mental Health Wallah 
+
+    
+    </p>
+    <p class="text-3xl sm:text-4xl font-light text-gray-800">
+   
+   for your 
+    
+    </p>
+    <p class="text-3xl sm:text-4xl font-light text-gray-800">
+   
+    Mental Health Wellness
+    
+    </p>
+
     </div>
+    <h2 class="mt-4 text-xl font-extrabold tracking-tight text-gray-900 leading-tight">we provide</h2>
+
 
     <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       <a
@@ -29,11 +46,11 @@ function MiddleIntro() {
     </svg>
       
 
-        <h2 class="mt-4 text-xl font-bold text-black">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-black">Mental Health AI Assessment</h2>
 
-        <p class="mt-1 text-sm text-black text-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        <p class="mt-1 text-sm text-black text-2xl font-semibold">
+        A mental health assessment function provides a quiz, analyzes responses using AI, 
+        and offers insights based on the individual's answers to gauge mental well-being.
         </p>
       </a>
       <a
@@ -51,11 +68,10 @@ function MiddleIntro() {
       <path d="M10 20a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zM6.5 9a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm7 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm2.16 3a6 6 0 01-11.32 0h11.32z" />
     </svg>
 
-        <h2 class="mt-4 text-xl font-bold text-black">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-black">Mood Tracker</h2>
 
-        <p class="mt-1 text-sm text-black text-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        <p class="mt-1 text-sm text-black text-2xl font-semibold">
+        A mood tracker function monitors individual moods, visualizes trends graphically, and provides tailored suggestions based on mood patterns for better emotional management.
         </p>
       </a>
       <a
@@ -77,11 +93,10 @@ function MiddleIntro() {
 
       
 
-        <h2 class="mt-4 text-xl font-bold text-black">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-black">AI ChatBot-"Dost"</h2>
 
-        <p class="mt-1 text-sm text-black text-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        <p class="mt-1 text-sm text-black text-2xl font-semibold">
+        An AI chatbot called "Dost" allows you to have interactive conversations, providing instant responses, personalized assistance.
         </p>
       </a>
 
@@ -100,7 +115,7 @@ function MiddleIntro() {
     <div class="mt-12 text-center">
       <a
         href="#"
-        class="inline-block rounded bg-gray-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
+        class="inline-block rounded bg-pink-700 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-900 focus:outline-none focus:ring focus:ring-yellow-400"
       >
         Get Started Today
       </a>

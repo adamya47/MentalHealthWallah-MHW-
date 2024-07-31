@@ -161,6 +161,7 @@ const logoutUser=asyncHandler(async(req,res)=>{
         secure:true
     }
 
+   
 
 return res.status(200).clearCookie("accessToken",options)
           .clearCookie("refreshToken",options)

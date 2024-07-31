@@ -14,86 +14,18 @@ function Footer() {
         </svg>
     </div>
 
-    <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
-      itaque neque.
+    <p class="text-center leading-relaxed text-gray-700 mt-3">
+      created by -Adamya Sharma 
+      
+    </p>
+    <p class="text-center leading-relaxed text-gray-700">
+ 
+      contact- adamyasharmawork@gmail.com
     </p>
 
-    <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-      <li>
-        <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> About </a>
-      </li>
 
-      <li>
-        <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Careers </a>
-      </li>
-
-      <li>
-        <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> History </a>
-      </li>
-
-      <li>
-        <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Services </a>
-      </li>
-
-      <li>
-        <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Projects </a>
-      </li>
-
-      <li>
-        <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Blog </a>
-      </li>
-    </ul>
-
-    <ul class="mt-12 flex justify-center gap-6 md:gap-8">
-      <li>
-        <a
-          href="#"
-          rel="noreferrer"
-          target="_blank"
-          class="text-gray-700 transition hover:text-gray-700/75"
-        >
-          <span class="sr-only">Facebook</span>
-          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              fill-rule="evenodd"
-              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </a>
-      </li>
-
-      <li>
-        <a
-          href="#"
-          rel="noreferrer"
-          target="_blank"
-          class="text-gray-700 transition hover:text-gray-700/75"
-        >
-          <span class="sr-only">Instagram</span>
-          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-  <path d="M22.23 0H1.77C.79 0 0 .78 0 1.75v20.5C0 23.22.79 24 1.77 24h20.5c.98 0 1.77-.78 1.77-1.75V1.75C24 .78 23.21 0 22.23 0zm-14.8 20.45H3.54V9h3.89v11.45zm-1.94-13.1a2.27 2.27 0 1 1 0-4.54 2.27 2.27 0 0 1 0 4.54zm13.6 13.1h-3.89v-5.68c0-1.35-.03-3.08-1.88-3.08-1.88 0-2.17 1.47-2.17 2.98v5.78H9.1V9h3.73v1.56h.05c.52-.99 1.8-2.04 3.7-2.04 3.96 0 4.69 2.6 4.69 5.98v6.95z"/>
-</svg>
-        </a>
-      </li>
-
-      <li>
-        <a
-          href="#"
-          rel="noreferrer"
-          target="_blank"
-          class="text-gray-700 transition hover:text-gray-700/75"
-        >
-          <span class="sr-only">Twitter</span>
-          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-            />
-          </svg>
-        </a>
-      </li>
-
+    <ul class="flex justify-center gap-6 ">
+    
       <li>
         <a
           href="#"
@@ -111,24 +43,20 @@ function Footer() {
           </svg>
         </a>
       </li>
-
+   
       <li>
-        <a
-          href="#"
-          rel="noreferrer"
-          target="_blank"
-          class="text-gray-700 transition hover:text-gray-700/75"
-        >
-          <span class="sr-only">Dribbble</span>
-          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              fill-rule="evenodd"
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </a>
-      </li>
+  <a
+    href="https://www.linkedin.com"
+    rel="noreferrer"
+    target="_blank"
+    class="text-gray-700 transition hover:text-gray-700/75"
+  >
+    <span class="sr-only">LinkedIn</span>
+    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M22.23 22.23H18.82v-5.71c0-1.36-.03-3.13-1.9-3.13-1.9 0-2.19 1.48-2.19 2.98v5.86h-3.8V9.24h3.65v1.56h.05c.51-.96 1.76-1.98 3.62-1.98 3.87 0 4.58 2.55 4.58 5.88v7.53zM5.36 7.28c-1.23 0-2.22-.98-2.22-2.2s.98-2.22 2.22-2.22 2.22.98 2.22 2.22c0 1.22-.98 2.2-2.22 2.2zm1.91 14.95H3.45V9.24h3.81v12.99zm16.25-19.49H4.51C2.01 1.74 0 3.75 0 6.27v11.46c0 2.52 2.01 4.53 4.51 4.53h18.1c2.5 0 4.51-2.01 4.51-4.53V6.27c0-2.52-2.01-4.53-4.51-4.53z"/>
+    </svg>
+  </a>
+</li>
     </ul>
   </div>
 </footer>
