@@ -32,7 +32,7 @@ function MiddleIntro() {
 
     <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       <a
-        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 hover:bg-sky-400"
+        class="block rounded-xl border border-gray-600 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 hover:bg-sky-400"
         href="#"
       >
          <svg
@@ -54,7 +54,7 @@ function MiddleIntro() {
         </p>
       </a>
       <a
-        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 hover:bg-sky-400"
+        class="block rounded-xl border border-gray-600 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 hover:bg-sky-400"
         href="#"
       >
      
@@ -75,7 +75,7 @@ function MiddleIntro() {
         </p>
       </a>
       <a
-        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 hover:bg-sky-400"
+        class="block rounded-xl border border-gray-600 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 hover:bg-sky-400"
         href="#"
       >
      

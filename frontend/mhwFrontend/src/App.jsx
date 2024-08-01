@@ -1,8 +1,11 @@
 import Card from "./components/Card"
 import CardL from "./components/CardL"
 import Footer from "./components/Footer"
-import MiddleIntro from "./components/MiddleIntro"
+
+
+
 import Navbar from "./components/Navbar"
+import SignUp from "./pages/SignUp"
 
 
 function App() {
@@ -12,7 +15,8 @@ function App() {
    <>
    <Navbar/>
    
-   <MiddleIntro/>
+   <SignUp/>
+   
    <Footer/>
    </>
   )

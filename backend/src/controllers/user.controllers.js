@@ -47,7 +47,7 @@ const createUser=asyncHandler(async(req,res)=>{
 
  
  const user=await User.create({username,password})
-console.log(".yeh rahi id",user._id)
+
 
  
  if(!user){
@@ -64,12 +64,11 @@ console.log(".yeh rahi id",user._id)
  }
 
  if (!tokens || !tokens.accessToken || !tokens.refreshToken) {
-     console.error('Tokens are undefined:', tokens); // Debugging line
+     // Debugging line
      throw new ApiError(500, "Tokens are undefined");
  }
 
  const { accessToken, refreshToken } = tokens;
- console.log('Access and Refresh tokens:', { accessToken, refreshToken }); // Debugging line
 
  
  user.refreshToken=tokens.refreshToken
