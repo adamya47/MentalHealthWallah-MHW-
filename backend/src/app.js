@@ -22,13 +22,12 @@ app.use(express.urlencoded({extended:true,limit:"16kb"}))//extended true means o
 //routes import
 
 import { userRouter } from "./routes/user.routes.js"
-
+import { analysisRouter } from "./routes/analysis.routes.js"
 //route declaration
   
 
-app.use("/api/v1/users",userRouter)
-
-
+app.use("/api/v1/users",userRouter);
+app.use("/api/v1/ai",analysisRouter);
 
 //error handling middleware should have 4 arguments this tells express that its an error handling middleware
 
@@ -40,3 +39,5 @@ app.use((err,req,res,next) => {
     message: err.message || 'Internal Server Error',
   });
 });
+
+
