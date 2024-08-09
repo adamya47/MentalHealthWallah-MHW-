@@ -11,3 +11,4 @@ userRouter.route("/login").post(loginUser)
 userRouter.route("/logout").post(verifyJWT,logoutUser)
 userRouter.route("/refreshAccessToken").post(refreshAccessToken)
 userRouter.route("/currentUser").get(verifyJWT,getCurrentUser)
+

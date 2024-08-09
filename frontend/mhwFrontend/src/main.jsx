@@ -9,12 +9,13 @@ import MiddleIntro from './components/MiddleIntro.jsx'
 import AssessmentPage from './pages/AssessmentPage.jsx'
 import SignUp from './pages/SignUp.jsx'
 import Login from './pages/Login.jsx'
+import Intro from './pages/Intro.jsx'
 
 
 const router=createBrowserRouter(createRoutesFromElements(
 
 <Route path="/" element={<App/>}>
-
+<Route path="mhw" element={<Intro/>}/>
 <Route path="signup" element={<SignUp/>}/>
 <Route path="login" element={<Login/>}/>
 
@@ -22,7 +23,7 @@ const router=createBrowserRouter(createRoutesFromElements(
 
 <Route path="/testPHQ9" element={<AssessmentPage/>}/>
 
-
+<Route path="*" element={<h1>NO SUCH URL EXISTS DEAR :X ;D</h1>}/>
 </Route>
 
 ))

@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import axios from 'axios'
 import { useDispatch } from 'react-redux'
 import {logout} from "../store/userSlice.js"
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -14,6 +15,7 @@ function Navbar() {
 
   const dispatch=useDispatch();
   const status=useSelector(state=>state.userInfo.status)
+const navigate=useNavigate();
 
   const logoutFunc=async()=>{
     try {
@@ -37,8 +39,9 @@ function Navbar() {
   return (
 
     <header className="bg-white">
-    <div className="mx-auto flex justify-between h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-      <a className="text-teal-600" href="#">
+    <div className="mx-auto flex justify-between h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8 "
+      >
+      <a className="text-teal-600 hover:cursor-pointer" onClick={()=>navigate("mhw")}>
         <span className="sr-only">Home</span>
        
         <svg className="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,22 +62,23 @@ function Navbar() {
 
 
 
-        {status?null :(<div className="sm:flex sm:gap-4">
-            <a
-              className="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
-              href="#"
-            >
+        {status?null :(
+          
+          <div className="sm:flex sm:gap-4 " >
+            <div
+              className="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 hover:cursor-pointer "
+              onClick={()=>navigate("/login")} >
               Login
-            </a>
+            </div>
   </div>)}  
 
-  {status?(<div className="sm:flex sm:gap-4" onClick={logoutFunc}>
-            <a
-              className="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
-              href="#"
+  {status?(<div className="sm:flex sm:gap-4">
+            <div
+              className="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 hover:cursor-pointer"
+              onClick={logoutFunc}
             >
               Logout
-            </a>
+            </div>
   </div>) : null }  
 
 
@@ -84,8 +88,8 @@ function Navbar() {
 
     <div>
     <a
-      className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block"
-      href="#"
+      className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block hover:cursor-pointer"
+      onClick={()=>navigate("/signup")}
     >
       Register
     </a>

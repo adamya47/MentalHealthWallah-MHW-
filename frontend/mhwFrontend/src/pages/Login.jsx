@@ -46,14 +46,14 @@ const LoginFunc=async(data)=>{
    (
     <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
   <div className="mx-auto max-w-lg">
-    <h1 className="text-center text-2xl font-bold text-teal-600 sm:text-3xl">Get started today</h1>
+    <h1 className="text-center text-2xl font-bold text-teal-600 sm:text-3xl">Log back into your account</h1>
 
     
     
 
     <form onSubmit={handleSubmit(LoginFunc)} className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
 
-      <p className="text-center text-lg font-medium">Create your account</p>
+      
 
       <div>
         <label htmlFor="username" className="sr-only">Username</label>
@@ -112,7 +112,7 @@ const LoginFunc=async(data)=>{
         type="submit"
         className="block w-full rounded-lg bg-teal-600 px-5 py-3 text-sm font-medium text-white"
       >
-        Sign in
+        Log in
       </button>
 {fault && (<p className='text-red-500'>{fault}</p>)}
       <p className="text-center text-sm text-gray-500">
