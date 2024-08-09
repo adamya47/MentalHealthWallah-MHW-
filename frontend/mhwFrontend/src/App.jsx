@@ -2,7 +2,7 @@ import Card from "./components/Card"
 import CardL from "./components/CardL"
 import Footer from "./components/Footer"
 import MiddleIntro from "./components/MiddleIntro"
-
+import { Outlet } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
 import AssessmentPage from "./pages/AssessmentPage"
@@ -16,7 +16,8 @@ function App() {
    <>
    <Navbar/>
    
-   <AssessmentPage/>
+   <Outlet/>
+ 
    
    <Footer/>
    </>
