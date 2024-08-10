@@ -11,7 +11,8 @@ const dispatch=useDispatch();
 const{register,handleSubmit,formState:{errors}}=useForm();
 const [fault,setFault]=useState("")
 const[loading,setLoading]=useState(false)
-//const navigate=useNavigate()
+const[visible,setVisible]=useState(false)
+const navigate=useNavigate()
 
 const LoginFunc=async(data)=>{
     try {
@@ -23,15 +24,21 @@ const LoginFunc=async(data)=>{
             if(userData){
             dispatch(login(userData.data))
             console.log("successful hogya sab")
-        // navigate("/home")
+        navigate("/home")
             setLoading(false)
          }
          }
 
     } catch (error) {
-        setLoading(false)
+
+      setLoading(false)
+      if(error && error.response && error.response.data && error.response.data.message){
         setFault(error.response.data.message)
-        console.log(error.response.data.message)
+      }else{
+        setFault(error.message)
+      }
+      
+      console.log(error)
     }
 
 }
@@ -47,7 +54,7 @@ const LoginFunc=async(data)=>{
     <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
   <div className="mx-auto max-w-lg">
     <h1 className="text-center text-2xl font-bold text-teal-600 sm:text-3xl">Log back into your account</h1>
-
+<p className='text-center text-lg '>New User?<span className='text-lg  text-teal-600 hover:underline hover:cursor-pointer ' onClick={()=>navigate("/signup")}>Click here</span></p>
     
     
 
@@ -75,15 +82,17 @@ const LoginFunc=async(data)=>{
 
         <div className="relative">
           <input
-            type="password"
-            className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+            type={visible?"text":"password"}
+            className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm "
             placeholder="Enter password"
             {...register("password",{required:"Password is required"})}
           />
                    {errors.password && (<p className='text-red-500'>{errors.password.message}</p>)}
 
 
-<span className="absolute inset-y-0 end-0 grid place-content-center px-4">
+ <span className="absolute inset-y-0 end-0 grid place-content-center px-4 hover:cursor-pointer"
+  onClick={()=>setVisible(prev=>!prev)}
+ >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="size-4 text-gray-400"

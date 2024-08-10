@@ -24,6 +24,7 @@ const navigate=useNavigate();
      if(loggedOutUser){
       console.log(loggedOutUser.data)
       dispatch(logout())
+      navigate("mhw")
      }
       
     } catch (error) {

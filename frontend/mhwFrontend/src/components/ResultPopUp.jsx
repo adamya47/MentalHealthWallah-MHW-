@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom'
 function ResultPopUp({show,result,recc,website}) {
   
-  
+  const navigate=useNavigate()
   
   
  return show &&
@@ -11,7 +11,7 @@ function ResultPopUp({show,result,recc,website}) {
     className="rounded-lg border border-gray-100 bg-white p-4 shadow-sm transition hover:shadow-lg sm:p-6"
   >
 
-    <div className='flex justify-between'>
+    <div className='flex justify-between hover:cursor-pointer' onClick={()=>navigate("/home")}>
 
     <span className="inline-block rounded bg-teal-600 p-2 text-white">
       <svg

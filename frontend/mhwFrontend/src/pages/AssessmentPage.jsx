@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import {  useForm } from 'react-hook-form'
 import ResultPopUp from '../components/ResultPopUp';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -9,7 +10,7 @@ import ResultPopUp from '../components/ResultPopUp';
 
 function AssessmentPage() {
 
-
+const navigate=useNavigate();
  const{handleSubmit,register,formState:{errors}}=useForm();
 
  const[result,setresult]=useState("");

@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function MiddleIntro() {
+
+  const navigate=useNavigate();
   return (
     <section class="bg-teal-500 text-black">
   <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -31,9 +34,10 @@ function MiddleIntro() {
 
 
     <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <a
-        class="block rounded-xl border border-gray-600 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 hover:bg-sky-400"
-        href="#"
+
+      <div
+        class="block rounded-xl border border-gray-600 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 hover:bg-sky-400 hover:cursor-pointer"
+         onClick={()=>navigate("/testPHQ9")}
       >
          <svg
       viewBox="0 0 24 24"
@@ -46,13 +50,13 @@ function MiddleIntro() {
     </svg>
       
 
-        <h2 class="mt-4 text-xl font-bold text-black">Mental Health AI Assessment</h2>
+        <h2 class="mt-4 text-xl font-bold text-black">Mental Health Assessment</h2>
 
         <p class="mt-1 text-sm text-black text-2xl font-semibold">
-        A mental health assessment function provides a quiz, analyzes responses using AI, 
-        and offers insights based on the individual's answers to gauge mental well-being.
+        It is designed to evaluate the severity of depression through the administration of the Patient Health Questionnaire-9 (PHQ-9).
+        It is based on diagnostic criteria for depression as per the DSM-IV (Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition).
         </p>
-      </a>
+      </div>
       <a
         class="block rounded-xl border border-gray-600 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 hover:bg-sky-400"
         href="#"
@@ -112,14 +116,7 @@ function MiddleIntro() {
     
     </div>
 
-    <div class="mt-12 text-center">
-      <a
-        href="#"
-        class="inline-block rounded bg-pink-700 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-900 focus:outline-none focus:ring focus:ring-yellow-400"
-      >
-        Get Started Today
-      </a>
-    </div>
+  
   </div>
 </section>
   )

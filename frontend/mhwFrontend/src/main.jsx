@@ -21,7 +21,7 @@ const router=createBrowserRouter(createRoutesFromElements(
 
 <Route path="home" element={<MiddleIntro/>}/>
 
-<Route path="/testPHQ9" element={<AssessmentPage/>}/>
+<Route path="testPHQ9" element={<AssessmentPage/>}/>
 
 <Route path="*" element={<h1>NO SUCH URL EXISTS DEAR :X ;D</h1>}/>
 </Route>
