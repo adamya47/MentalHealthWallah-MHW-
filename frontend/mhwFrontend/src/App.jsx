@@ -47,8 +47,8 @@ function App() {
    <>
    <Navbar/>
 
-   <Outlet/>
- 
+   
+ <Outlet/>
    
    <Footer/>
    </>

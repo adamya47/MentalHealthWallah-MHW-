@@ -124,10 +124,7 @@ const LoginFunc=async(data)=>{
         Log in
       </button>
 {fault && (<p className='text-red-500'>{fault}</p>)}
-      <p className="text-center text-sm text-gray-500">
-        No account?
-        <a className="underline" href="#">Sign up</a>
-      </p>
+      
     </form>
   </div>
 </div>

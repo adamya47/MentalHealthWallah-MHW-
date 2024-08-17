@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import DoughNutGraph from './Graph Doughnut/DoughNutGraph';
 
 function MiddleIntro() {
 
@@ -97,11 +98,10 @@ function MiddleIntro() {
 
       
 
-        <h2 class="mt-4 text-xl font-bold text-black">AI ChatBot-"Dost"</h2>
+        <h2 class="mt-4 text-xl font-bold text-black">Daily Affirmation Zone</h2>
 
         <p class="mt-1 text-sm text-black text-2xl font-semibold">
-        An AI chatbot called "Dost" allows you to have interactive conversations, providing instant responses, personalized assistance.
-        </p>
+A dedicated zone to promote positive thinking throw daily self affirmation.        </p>
       </a>
 
 
