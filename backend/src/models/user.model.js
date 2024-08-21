@@ -16,14 +16,18 @@ password:{
     trim:true,
 },
 
-moodEnteries:[{
+moodData:[{
     type:Schema.Types.ObjectId,
     ref:"Mood"
 }],
 
-mentalResult:[{
+testResult:[{
     type:Schema.Types.ObjectId,
-    ref:"Assessment"
+    ref:"Test"
+}],
+affirmations:[{
+    type:Schema.Types.ObjectId,
+    ref:"Affirmation"
 }],
 
 refreshToken:{

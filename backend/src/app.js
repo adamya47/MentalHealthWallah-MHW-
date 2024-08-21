@@ -22,12 +22,14 @@ app.use(express.urlencoded({extended:true,limit:"16kb"}))//extended true means o
 //routes import
 
 import { userRouter } from "./routes/user.routes.js"
-import { analysisRouter } from "./routes/analysis.routes.js"
+
+import moodRouter from "./routes/mood.routes.js"
 //route declaration
   
 
 app.use("/api/v1/users",userRouter);
-app.use("/api/v1/ai",analysisRouter);
+app.use("/api/v1/moodTracker",moodRouter);
+
 
 //error handling middleware should have 4 arguments this tells express that its an error handling middleware
 
