@@ -133,7 +133,7 @@ const questions=[
  <div className='flex flex-col items-center bg-gray-100'>
     <h1 className='text-3xl sm:text-4xl font-light text-gray-800 underline'>Depression Severity Assessment (PHQ-9)</h1>
     <div className='h-72 w-48'>
- <DoughNutGraph/>
+
  </div>
  <p className='text-2xl  font-light text-gray-800'>
  Over the last 2 weeks, how often have you been

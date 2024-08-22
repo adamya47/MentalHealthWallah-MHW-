@@ -58,9 +58,9 @@ function MiddleIntro() {
         It is based on diagnostic criteria for depression as per the DSM-IV (Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition).
         </p>
       </div>
-      <a
+      <div
         class="block rounded-xl border border-gray-600 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 hover:bg-sky-400"
-        href="#"
+        onClick={()=>navigate("/moodTracker")}
       >
      
      <svg
@@ -78,10 +78,10 @@ function MiddleIntro() {
         <p class="mt-1 text-sm text-black text-2xl font-semibold">
         A mood tracker function monitors individual moods, visualizes trends graphically, and provides tailored suggestions based on mood patterns for better emotional management.
         </p>
-      </a>
-      <a
+      </div>
+      <div
         class="block rounded-xl border border-gray-600 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10 hover:bg-sky-400"
-        href="#"
+        
       >
      
     
@@ -102,7 +102,7 @@ function MiddleIntro() {
 
         <p class="mt-1 text-sm text-black text-2xl font-semibold">
 A dedicated zone to promote positive thinking throw daily self affirmation.        </p>
-      </a>
+      </div>
 
 
      

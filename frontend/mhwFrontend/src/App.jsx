@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { logout } from "./store/userSlice"
+import MoodPage from "./pages/MoodPage"
 
 
 function App() {
@@ -47,8 +48,7 @@ function App() {
    <>
    <Navbar/>
 
-   
- <Outlet/>
+<Outlet/>
    
    <Footer/>
    </>

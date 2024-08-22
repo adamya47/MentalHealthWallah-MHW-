@@ -10,6 +10,7 @@ import AssessmentPage from './pages/AssessmentPage.jsx'
 import SignUp from './pages/SignUp.jsx'
 import Login from './pages/Login.jsx'
 import Intro from './pages/Intro.jsx'
+import MoodPage from './pages/MoodPage.jsx'
 
 
 const router=createBrowserRouter(createRoutesFromElements(
@@ -22,7 +23,7 @@ const router=createBrowserRouter(createRoutesFromElements(
 <Route path="home" element={<MiddleIntro/>}/>
 
 <Route path="testPHQ9" element={<AssessmentPage/>}/>
-
+<Route path="moodTracker" element={<MoodPage/>}/>
 <Route path="*" element={<h1>NO SUCH URL EXISTS DEAR :X ;D</h1>}/>
 </Route>
 

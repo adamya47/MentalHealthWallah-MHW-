@@ -1,16 +1,12 @@
 import React from 'react'
 import { Doughnut } from 'react-chartjs-2';
-import{Chart as ChartJS,Tooltip,Legend,ArcElement,Title } from "chart.js"
+import{Chart as ChartJS,Tooltip,Legend,ArcElement } from "chart.js"
 
-function DoughNutGraph() {
- 
-
+function DoughNutGraph({dataFromUser}) {
   //ref notes
 
 
-
-
-ChartJS.register(Tooltip,Legend,ArcElement,Title)
+ChartJS.register(Tooltip,Legend,ArcElement)
 
 const chartData={
 
@@ -18,8 +14,8 @@ const chartData={
 
  datasets:[
 {
-    data:[5,3,1],
-    label:"Days",
+    data:dataFromUser,
+    label:"Frequency",
     hoverOffset:4,
     backgroundColor:[
       'rgb(255, 99, 132)',
@@ -41,11 +37,13 @@ const chartOptions={
 
    legend:{
     display:true,
-    position:"bottom",
+    position:"top",
+    labels:{
+      color:"white"
+     }
 
-   },title:{
-    display:true,
-     text:"THIS IS TITLE"
+   },
+  
      
   }
    
@@ -57,7 +55,7 @@ const chartOptions={
 
 
 
-}
+
 
 
 
