@@ -15,7 +15,7 @@ const fetchData=async()=>{
     try {
         const response=await axios.get("http://localhost:8000/api/v1/moodTracker/getAllMoods",{withCredentials:true});
         const dataArray=response.data.data ;
-        console.log(dataArray)
+
             
 const arr=dataArray.reduce((acc,field)=>{
 
@@ -27,7 +27,6 @@ return acc;//VVP imp step
 
 },[0,0,0])
 
-console.log(arr)
 
 setChartData(arr)
 
@@ -78,7 +77,7 @@ setChartData(arr)
 
 try {
     
-console.log(data);
+
 const response=await axios.post("http://localhost:8000/api/v1/moodTracker/addMood",data,{withCredentials:true});
 if(response.data){
     fetchData()
@@ -99,7 +98,7 @@ setValue("moodEntry","")
   return (
    
  
-    <div className='w-full h-full bg-teal-600'>
+    <div className='w-full h-full bg-gradient-to-r from-teal-400 to-teal-800'>
 
 
 <h1 className='text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight  '>Mood Tracker</h1>
