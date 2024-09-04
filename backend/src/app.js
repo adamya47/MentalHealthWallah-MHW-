@@ -8,7 +8,7 @@ export const app=express()
 app.use(cookieParser())
 
 app.use(cors({
-origin:process.env.CORS_ORIGIN,
+origin:["https://mental-health-wallah-mhw.vercel.app"],
 methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 credentials:true
 }))
