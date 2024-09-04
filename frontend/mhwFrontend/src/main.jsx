@@ -11,6 +11,7 @@ import SignUp from './pages/SignUp.jsx'
 import Login from './pages/Login.jsx'
 import Intro from './pages/Intro.jsx'
 import MoodPage from './pages/MoodPage.jsx'
+import BreathingExercise from './components/BreathingExercise.jsx'
 
 
 const router=createBrowserRouter(createRoutesFromElements(
@@ -24,6 +25,7 @@ const router=createBrowserRouter(createRoutesFromElements(
 
 <Route path="testPHQ9" element={<AssessmentPage/>}/>
 <Route path="moodTracker" element={<MoodPage/>}/>
+<Route path="pauseAndReflect" element={<BreathingExercise/>}/>
 <Route path="*" element={<h1>NO SUCH URL EXISTS DEAR :X ;D</h1>}/>
 </Route>
 

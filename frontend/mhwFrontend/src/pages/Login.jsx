@@ -18,9 +18,9 @@ const LoginFunc=async(data)=>{
     try {
         setLoading(true)
         setFault("")
-        const user= await axios.post("http://localhost:8000/api/v1/users/login",data,{withCredentials:true})
+        const user= await axios.post("/api/v1/users/login",data,{withCredentials:true})
          if(user){
-            const userData=await axios.get("http://localhost:8000/api/v1/users/currentUser",{withCredentials:true})
+            const userData=await axios.get("/api/v1/users/currentUser",{withCredentials:true})
             if(userData){
             dispatch(login(userData.data))
             console.log("successful hogya sab")

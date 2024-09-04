@@ -13,7 +13,7 @@ function MoodPage() {
 const fetchData=async()=>{
 
     try {
-        const response=await axios.get("http://localhost:8000/api/v1/moodTracker/getAllMoods",{withCredentials:true});
+        const response=await axios.get("/api/v1/moodTracker/getAllMoods",{withCredentials:true});
         const dataArray=response.data.data ;
 
             
@@ -78,7 +78,7 @@ setChartData(arr)
 try {
     
 
-const response=await axios.post("http://localhost:8000/api/v1/moodTracker/addMood",data,{withCredentials:true});
+const response=await axios.post("/api/v1/moodTracker/addMood",data,{withCredentials:true});
 if(response.data){
     fetchData()
 }
@@ -144,12 +144,10 @@ setValue("moodEntry","")
 
 </div>
         
-       
-    
-        
-
 
       </div>
+
+
   )
 
 

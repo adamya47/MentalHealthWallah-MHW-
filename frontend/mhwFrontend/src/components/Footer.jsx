@@ -28,7 +28,7 @@ function Footer() {
     
       <li>
         <a
-          href="#"
+          href="https://github.com/adamya47"
           rel="noreferrer"
           target="_blank"
           class="text-gray-700 transition hover:text-gray-700/75"
@@ -46,7 +46,7 @@ function Footer() {
    
       <li>
   <a
-    href="https://www.linkedin.com"
+    href="https://www.linkedin.com/in/adamya-sharma-36532a2b1"
     rel="noreferrer"
     target="_blank"
     class="text-gray-700 transition hover:text-gray-700/75"
