@@ -5,7 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server:{
     proxy:{
-      "/api":"https://mentalhealthwallah-mhw.onrender.com"
+      "/api":{
+        target: 'https://mentalhealthwallah-mhw.onrender.com', // Correct backend URL
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''), // Remove `/api` from the path before forwarding
+      }
       
     }
   },
