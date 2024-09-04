@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import DoughNutGraph from './Graph Doughnut/DoughNutGraph';
+
 
 function MiddleIntro() {
 

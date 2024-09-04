@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { logout } from "./store/userSlice"
-import MoodPage from "./pages/MoodPage"
+
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       try {
 
 
-        const currentUser=await axios.get("http://localhost:8000/api/v1/users/currentUser")
+        const currentUser=await axios.get("/api/v1/users/currentUser")
  
     if(currentUser){
       navigate("home")

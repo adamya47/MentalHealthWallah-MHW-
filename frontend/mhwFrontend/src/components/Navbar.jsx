@@ -19,7 +19,7 @@ const navigate=useNavigate();
 
   const logoutFunc=async()=>{
     try {
-     const loggedOutUser= await axios.post("http://localhost:8000/api/v1/users/logout",{},{withCredentials:true})
+     const loggedOutUser= await axios.post("/api/v1/users/logout",{},{withCredentials:true})
 
      if(loggedOutUser){
       console.log(loggedOutUser.data)

@@ -24,7 +24,7 @@ const signUpFunc=async(data)=>{
             const userData=await axios.get("/api/v1/users/currentUser",{withCredentials:true})
             if(userData){
             dispatch(login(userData.data))
-            console.log("successful hogya sab")
+          
         navigate("/home")
             setLoading(false)
          }
