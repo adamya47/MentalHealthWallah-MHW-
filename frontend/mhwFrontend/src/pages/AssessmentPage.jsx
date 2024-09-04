@@ -3,7 +3,7 @@ import axios from 'axios'
 import {  useForm } from 'react-hook-form'
 import ResultPopUp from '../components/ResultPopUp';
 import { useNavigate } from 'react-router-dom';
-import DoughNutGraph from '../components/Graph Doughnut/DoughNutGraph';
+
 
 
 

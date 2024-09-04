@@ -12,14 +12,14 @@ import { useNavigate } from 'react-router-dom'
 
 
 function Navbar() {
-
+  const apiURL=process.env.REACT_APP_API_URL;
   const dispatch=useDispatch();
   const status=useSelector(state=>state.userInfo.status)
 const navigate=useNavigate();
 
   const logoutFunc=async()=>{
     try {
-     const loggedOutUser= await axios.post("/api/v1/users/logout",{},{withCredentials:true})
+     const loggedOutUser= await axios.post(`${apiURL}/api/v1/users/logout`,{},{withCredentials:true})
 
      if(loggedOutUser){
       console.log(loggedOutUser.data)

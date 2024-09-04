@@ -7,13 +7,14 @@ import axios from 'axios';
 function MoodPage() {
     const{handleSubmit,register,setValue,formState:{errors}}=useForm();
     const[chartData,setChartData]=useState([0,0,0])
+    const apiURL=process.env.REACT_APP_API_URL;
 
 //yeh sirf start me ek baar render hoga to obtain previous data 
 
 const fetchData=async()=>{
 
     try {
-        const response=await axios.get("/api/v1/moodTracker/getAllMoods",{withCredentials:true});
+        const response=await axios.get(`${apiURL}/api/v1/moodTracker/getAllMoods`,{withCredentials:true});
         const dataArray=response.data.data ;
 
             
