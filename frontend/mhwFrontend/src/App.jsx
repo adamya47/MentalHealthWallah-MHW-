@@ -21,7 +21,7 @@ function App() {
       try {
 
 
-        const currentUser=await axios.get("/api/v1/users/currentUser")
+        const currentUser=await axios.get("https://mhw-backend.vercel.app/api/v1/users/currentUser")
  
     if(currentUser){
       navigate("home")

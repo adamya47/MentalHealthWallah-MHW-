@@ -6,7 +6,7 @@ import { login } from '../store/userSlice.js'
 import { useNavigate } from 'react-router-dom'
 
 function SignUp() {
-const apiURL=process.env.REACT_APP_API_URL;
+
 const dispatch=useDispatch();
 const{register,handleSubmit,formState:{errors}}=useForm();
 const [fault,setFault]=useState("")
@@ -18,10 +18,10 @@ const signUpFunc=async(data)=>{
     try {
         setLoading(true)
         setFault("")
-        const user= await axios.post(`${apiURL}/api/v1/users/register`,data,{withCredentials:true})
+        const user= await axios.post(`https://mhw-backend.vercel.app/api/v1/users/register`,data,{withCredentials:true})
 
          if(user){
-            const userData=await axios.get(`${apiURL}/api/v1/users/currentUser`,{withCredentials:true})
+            const userData=await axios.get(`https://mhw-backend.vercel.app/api/v1/users/currentUser`,{withCredentials:true})
             if(userData){
             dispatch(login(userData.data))
           
