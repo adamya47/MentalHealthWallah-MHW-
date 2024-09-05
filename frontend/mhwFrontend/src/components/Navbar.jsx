@@ -19,7 +19,7 @@ const navigate=useNavigate();
 
   const logoutFunc=async()=>{
     try {
-     const loggedOutUser= await axios.post(`${apiURL}/api/v1/users/logout`,{},{withCredentials:true})
+     const loggedOutUser= await axios.post(`https://mhw-backend.vercel.app/api/v1/users/logout`,{},{withCredentials:true})
 
      if(loggedOutUser){
       console.log(loggedOutUser.data)

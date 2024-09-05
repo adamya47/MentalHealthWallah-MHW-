@@ -15,12 +15,13 @@ app.use(cors(corsOptions))
 
 app.use(cookieParser())
 
-//option for preFlight request
+//option for preFlight request,imp for browser to determine if cookies can be sent
+
 app.options('*', (req, res) => {
-  res.header('Access-Control-Allow-Origin','https://mental-health-wallah-mhw.vercel.app');  // Replace with your frontend domain
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'); // Methods you allow
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Headers you allow
-  res.sendStatus(200); // Respond with status 200 OK
+  res.header('Access-Control-Allow-Origin','https://mental-health-wallah-mhw.vercel.app');  
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'); 
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.sendStatus(200); 
 });
 
 app.use(express.json({
