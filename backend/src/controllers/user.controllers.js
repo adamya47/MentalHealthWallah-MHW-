@@ -77,7 +77,8 @@ const createUser=asyncHandler(async(req,res)=>{
 
  const options={
     httpOnly:true,
-    secure:true
+    secure:true,
+    sameSite: 'None'//for cross site cookie sharing
  }
 
  
@@ -131,7 +132,8 @@ const loginUser=asyncHandler(async(req,res)=>{
         
         const options={
             httpOnly:true,
-            secure:true
+            secure:true,
+            sameSite: 'None'
         }
         return res.status(200).cookie("accessToken",accessToken,options)
                               .cookie("refreshToken",refreshToken,options)
@@ -157,7 +159,8 @@ const logoutUser=asyncHandler(async(req,res)=>{
 
     const options={
         httpOnly:true,
-        secure:true
+        secure:true,
+        sameSite: 'None'
     }
 
    
