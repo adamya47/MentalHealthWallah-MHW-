@@ -8,14 +8,11 @@ export const app=express()
 app.use(cookieParser())
 const corsOptions={
   origin:['https://mental-health-wallah-mhw.vercel.app'],
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-  credentials:true
+    credentials:true
   }
 
 app.use(cors(corsOptions))
 
-
-app.options('*', cors(corsOptions));
 
 app.use(express.json({
     limit:"16kb"
