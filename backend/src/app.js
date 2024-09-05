@@ -5,14 +5,23 @@ import cors from "cors"
 
 export const app=express()
 
-app.use(cookieParser())
+
 const corsOptions={
   origin:'https://mental-health-wallah-mhw.vercel.app',
-    credentials:true
+  credentials: true
   }
 
 app.use(cors(corsOptions))
 
+app.use(cookieParser())
+
+//option for preFlight request
+app.options('*', (req, res) => {
+  res.header('Access-Control-Allow-Origin','https://mental-health-wallah-mhw.vercel.app');  // Replace with your frontend domain
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'); // Methods you allow
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Headers you allow
+  res.sendStatus(200); // Respond with status 200 OK
+});
 
 app.use(express.json({
     limit:"16kb"
